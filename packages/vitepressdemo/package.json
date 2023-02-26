@@ -1,0 +1,28 @@
+{
+  "name": "vitepressdemo",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "vitepressdemo",
+    "vue3组件库demo"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "lingtingAG",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lingtingAG/vitepressdemo.git"
+  }
+}
