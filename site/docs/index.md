@@ -5,9 +5,9 @@ title: vitepressdemo
 titleTemplate: 一个Vue3组件库
 
 hero:
-  name: vitepressdemo
-  text: 一个Vue3组件库
-  tagline: 让你的组件库开发更简单
+  name: lingting的笔记
+  text: 个人记录笔记
+  tagline: 我的学习记录
   image:
     /src: /logo.png
     alt: vitepressdemo
@@ -16,8 +16,8 @@ hero:
       text: 开始
       link: /guide/
     - theme: alt
-      text: 在 Gitee 上查看
-      link: https://gitee.com/geeksdidi/kittyui
+      text: 在 Github 上查看
+      link: https://github.com/lingtingAG
 
 features:
   - icon: 💡
