@@ -1,5 +1,22 @@
 # vue部分知识点
 
+## vue常用的修饰符
+**v-on**
+ - .stop - 调用 event.stopPropagation()。 阻止默认事件
+ - .prevent - 调用 event.preventDefault()。阻止默认行为
+ - .native - 监听组件根元素的原生事件。
+
+**v-bind**
+ - .prop - 作为一个 DOM property 绑定而不是作为 attribute 绑定。
+ - .camel - (2.1.0+) 将 kebab-case attribute 名转换为 camelCase。(从 2.1.0 开始支持)
+ - .sync (2.3.0+) 语法糖，会扩展成一个更新父组件绑定值的 v-on 侦听器。
+
+**v-model**
+ - [.lazy]- 取代 input 监听 change 事件
+ - [.number] - 输入字符串转为有效的数字
+ - [.trim] - 输入首尾空格过滤
+
+
 ## 自定义指令
 实现点击一次后需经过一段时间才能再次点击
 1.创建实现方法

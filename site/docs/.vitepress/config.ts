@@ -1,8 +1,10 @@
 export default {
-  base: process.env.NODE_ENV === 'production' ? '/vitepressdemo/' : '/',
+  base: process.env.NODE_ENV === "production" ? "/vitepressdemo/" : "/",
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     siteTitle: "lingting的笔记",
     nav: [
+      { text: "资源导航", link: "/nav/" },
       { text: "学习笔记", link: "/note/" },
       { text: "指南XX", link: "/guild/installation/" },
       { text: "组件XX", link: "/components/button/" }
@@ -84,6 +86,6 @@ export default {
         }
       ]
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/lingtingAG/vitepressdemo" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/lingtingAG/vitepressdemo" }]
   }
 };
