@@ -1,5 +1,5 @@
 export default {
-  base: process.env.NODE_ENV === "production" ? "/vitepressdemo/" : "/",
+  base:'/',
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     siteTitle: "lingting的笔记",
