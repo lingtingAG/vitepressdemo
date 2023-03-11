@@ -25,7 +25,7 @@ const svg = computed(() => {
         <div v-else-if="icon && typeof icon === 'string'" class="icon">
           <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />
         </div>
-        <h6 v-if="title" class="title">{{ title }}</h6>
+        <h6 v-if="title"><span class="title">{{ title }}</span></h6>
       </div>
       <p v-if="desc" class="desc">{{ desc }}</p>
     </article>
@@ -46,7 +46,13 @@ const svg = computed(() => {
     transform: translateY(-4px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .1);
     .title{
-      color: #3273dc;
+      background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .desc{
+      color: #000;
     }
   }
 

@@ -156,6 +156,13 @@ export const NAV_DATA = [
         desc: '此书是 《TypeScript Deep Dive》 的中文翻译版，从基础到深入，很全面的阐述了 TypeScript 的各种魔法，不管你是新手，还是老鸟，它都将适应你',
         link: "https://jkchao.github.io/typescript-book-chinese/#why"
       },
+      {
+        key: "https://www.dbyun.net/",
+        icon: icon['Quick Reference'],
+        title: "奇链",
+        desc: '一个神奇的网站',
+        link: "https://www.dbyun.net/"
+      },
     ]
   },
   {
@@ -174,7 +181,14 @@ export const NAV_DATA = [
         title: "V2EX",
         desc: 'V2EX是一个面向程序员、极客人群的分享交流社区',
         link: "https://v2ex.com/"
-      }
+      },
+      {
+        key: "https://segmentfault.com/",
+        icon: icon.SF,
+        title: "SegmentFault",
+        desc: '开放式协作的问答社区。',
+        link: "https://segmentfault.com/"
+      },
     ]
   },
   {
@@ -186,6 +200,18 @@ export const NAV_DATA = [
         title: "stackblitz",
         desc: 'Dev environments. In your web app.',
         link: "https://stackblitz.com/"
+      },
+    ]
+  },
+  {
+    title: "博客文档",
+    items: [
+      {
+        key: "https://chodocs.cn/",
+        icon: icon.choDocs,
+        title: "choDocs",
+        desc: '一站式前端内容网站，包括学习路线、知识体系',
+        link: "https://chodocs.cn/"
       },
     ]
   },

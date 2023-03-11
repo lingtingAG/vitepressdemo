@@ -21,5 +21,8 @@ export const icon = {
   "typescript-book": "https://jkchao.github.io/typescript-book-chinese/logo.png",
   VueUse: "https://vueuse.org/favicon.svg",
   stackblitz:
-    "https://c.staticblitz.com/assets/icons/icon-512x512-eb09dde1908d3c6968da8cda947cf8a1a1b966c8f54886a7a188e41e5576d829.png"
+    "https://c.staticblitz.com/assets/icons/icon-512x512-eb09dde1908d3c6968da8cda947cf8a1a1b966c8f54886a7a188e41e5576d829.png",
+  SF: "https://static.segmentfault.com/main_site_next/2861158c/touch-icon.png",
+  "Quick Reference": "https://www.dbyun.net/favicon.ico",
+  choDocs: "https://chodocs.cn/favicon.ico"
 };
