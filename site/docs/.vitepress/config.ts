@@ -83,6 +83,16 @@ export default {
               link: "/note/vue/"
             }
           ]
+        },
+        {
+          text: "others",
+          collapsed: false,
+          items: [
+            {
+              text: "小记",
+              link: "/note/others/"
+            }
+          ]
         }
       ]
     },

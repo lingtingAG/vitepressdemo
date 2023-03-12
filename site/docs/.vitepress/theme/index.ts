@@ -1,6 +1,7 @@
 import { h, App } from "vue";
 import { useData } from "vitepress";
 import Theme from "vitepress/theme";
+import vitepressdemo from "vitepressdemo";
 
 export default Object.assign({}, Theme, {
   Layout: () => {
@@ -14,5 +15,20 @@ export default Object.assign({}, Theme, {
     }
 
     return h(Theme.Layout, props);
+  },
+  enhanceApp: async ({ app }) => {
+    // app is the Vue 3 app instance from `createApp()`. router is VitePress'
+    // custom router. `siteData`` is a `ref`` of current site-level metadata.
+    app.use(vitepressdemo);
   }
 });
+
+// export default {
+//     ...DefaultTheme,
+//     enhanceApp: async ({ app }) => {
+//         // app is the Vue 3 app instance from `createApp()`. router is VitePress'
+//         // custom router. `siteData`` is a `ref`` of current site-level metadata.
+//         app.use(vitepressdemo);
+
+//     },
+// };

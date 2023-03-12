@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed } from "vue";
 
-import { NavLink } from './type'
+import { NavLink } from "./type";
 
 const props = defineProps<{
-  icon?: NavLink['icon']
-  title?: NavLink['title']
-  desc?: NavLink['desc']
-  link: NavLink['link']
-}>()
+  icon?: NavLink["icon"];
+  title?: NavLink["title"];
+  desc?: NavLink["desc"];
+  link: NavLink["link"];
+}>();
 
 const svg = computed(() => {
   console.log(typeof props.icon);
-  if (typeof props.icon === 'object') return props.icon.svg
-  return ''
-})
+  if (typeof props.icon === "object") return props.icon.svg;
+  return "";
+});
 </script>
 
 <template>
@@ -23,9 +23,15 @@ const svg = computed(() => {
       <div class="box-header">
         <div v-if="svg" class="icon" v-html="svg"></div>
         <div v-else-if="icon && typeof icon === 'string'" class="icon">
-          <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />
+          <img
+            :src="icon"
+            :alt="title"
+            onerror="this.parentElement.style.display='none'"
+          />
         </div>
-        <h6 v-if="title"><span class="title">{{ title }}</span></h6>
+        <h6 v-if="title">
+          <span class="title">{{ title }}</span>
+        </h6>
       </div>
       <p v-if="desc" class="desc">{{ desc }}</p>
     </article>
@@ -42,17 +48,17 @@ const svg = computed(() => {
   transition: all 0.3s;
   &:hover {
     background-color: var(--vp-c-bg-soft);
-    transition: transform .2s, box-shadow .2s;
+    transition: transform 0.2s, box-shadow 0.2s;
     transform: translateY(-4px);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, .1);
-    .title{
-      background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    .title {
+      background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .desc{
-      color: #000;
+    .desc {
+      color: var(--vp-c-text-1);
     }
   }
 
