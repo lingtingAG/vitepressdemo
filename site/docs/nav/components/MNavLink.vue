@@ -11,7 +11,6 @@ const props = defineProps<{
 }>();
 
 const svg = computed(() => {
-  console.log(typeof props.icon);
   if (typeof props.icon === "object") return props.icon.svg;
   return "";
 });

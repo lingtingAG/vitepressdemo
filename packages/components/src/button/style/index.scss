@@ -6,6 +6,7 @@
   background: #fff;
   border: 1px solid #dcdfe6;
   color: #606266;
+  appearance: none;
   -webkit-appearance: none;
   text-align: center;
   box-sizing: border-box;
@@ -26,6 +27,18 @@
   &:hover {
     background: #66b1ff;
     border-color: #66b1ff;
+    color: #fff;
+  }
+}
+
+.vp-button.vp-button--success {
+  color: #fff;
+  background-color: #67c23a;
+  border-color: #67c23a;
+
+  &:hover {
+    background: #b3e19d;
+    border-color: #b3e19d;
     color: #fff;
   }
 }
